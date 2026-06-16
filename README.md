@@ -18,6 +18,8 @@
 
 第 1 阶段：创建项目、初始化 Git、连接 GitHub。
 
+第 2 阶段：整理项目结构，让仓库看起来像一个可以长期维护的工程。
+
 ## 学习原则
 
 每次只做一个小闭环：
@@ -30,9 +32,19 @@
 
 ```text
 ai-knowledge-assistant/
-  app/              # 后端代码，之后会从这里开始写 FastAPI
-  data/             # 本地数据、测试文档、索引文件
-  docs/             # 学习笔记、项目设计、复盘
-  README.md         # 项目说明
+  app/                # 后端主代码
+    api/              # 接口层：以后放上传、提问、健康检查等 API
+    core/             # 核心配置：以后放配置项、日志、环境变量读取
+    services/         # 业务逻辑：以后放文档解析、检索、问答流程
+  data/               # 本地数据、测试文档、索引文件
+    samples/          # 示例文档
+  docs/               # 学习笔记、项目设计、复盘
+  scripts/            # 辅助脚本：以后放评测、数据处理、启动检查
+  tests/              # 测试代码
+  README.md           # 项目说明，给自己和面试官看的入口
 ```
 
+## 学习记录
+
+- [Lesson 01: 从 GitHub 仓库开始](docs/lesson-01-github-and-project.md)
+- [Lesson 02: 项目结构和 README](docs/lesson-02-project-structure-and-readme.md)
