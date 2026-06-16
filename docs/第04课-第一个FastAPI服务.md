@@ -1,4 +1,4 @@
-# Lesson 04: 第一个 FastAPI 服务
+# 第04课：第一个 FastAPI 服务
 
 ## 这一课要解决什么
 
@@ -12,7 +12,7 @@
 
 但到目前为止，这个项目还不会真正回应外界。
 
-Lesson 04 要让它完成第一次“开口说话”：
+第04课要让它完成第一次“开口说话”：
 
 ```text
 访问 /health
@@ -352,7 +352,7 @@ passed 或 failed
 ```text
 app/main.py
 tests/test_health.py
-docs/lesson-04-first-fastapi-service.md
+docs/第04课-第一个FastAPI服务.md
 pytest.ini
 ```
 

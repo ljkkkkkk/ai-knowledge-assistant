@@ -1,10 +1,14 @@
 from fastapi import FastAPI
 
+from app.core.config import get_settings
+
+
+settings = get_settings()
 
 app = FastAPI(
-    title="AI Knowledge Assistant",
+    title=settings.app_name,
     description="A step-by-step AI knowledge assistant project.",
-    version="0.1.0",
+    version=settings.app_version,
 )
 
 
@@ -12,6 +16,6 @@ app = FastAPI(
 def health_check() -> dict[str, str]:
     return {
         "status": "ok",
-        "service": "ai-knowledge-assistant",
+        "service": settings.service_name,
+        "environment": settings.app_env,
     }
-

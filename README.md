@@ -24,6 +24,10 @@
 
 第 4 阶段：创建第一个 FastAPI 服务和健康检查接口。
 
+第 5 阶段：记录虚拟环境启动排错与项目运行方式。
+
+第 6 阶段：引入配置管理，让应用名称、版本和运行环境从配置读取。
+
 ## 学习原则
 
 每次只做一个小闭环：
@@ -40,6 +44,7 @@ ai-knowledge-assistant/
     main.py           # FastAPI 应用入口
     api/              # 接口层：以后放上传、提问、健康检查等 API
     core/             # 核心配置：以后放配置项、日志、环境变量读取
+      config.py       # 配置读取：从默认值和 .env 中读取项目设置
     services/         # 业务逻辑：以后放文档解析、检索、问答流程
   data/               # 本地数据、测试文档、索引文件
     samples/          # 示例文档
@@ -53,10 +58,12 @@ ai-knowledge-assistant/
 
 ## 学习记录
 
-- [Lesson 01: 从 GitHub 仓库开始](docs/lesson-01-github-and-project.md)
-- [Lesson 02: 项目结构和 README](docs/lesson-02-project-structure-and-readme.md)
-- [Lesson 03: Python 虚拟环境和依赖管理](docs/lesson-03-python-env-and-dependencies.md)
-- [Lesson 04: 第一个 FastAPI 服务](docs/lesson-04-first-fastapi-service.md)
+- [第01课：从 GitHub 仓库开始](docs/第01课-从GitHub仓库开始.md)
+- [第02课：项目结构和 README](docs/第02课-项目结构和README.md)
+- [第03课：Python 虚拟环境和依赖管理](docs/第03课-Python虚拟环境和依赖管理.md)
+- [第04课：第一个 FastAPI 服务](docs/第04课-第一个FastAPI服务.md)
+- [第05课：虚拟环境启动排错与项目运行](docs/第05课-虚拟环境启动排错与项目运行.md)
+- [第06课：配置管理和环境变量](docs/第06课-配置管理和环境变量.md)
 
 ## 本地运行
 

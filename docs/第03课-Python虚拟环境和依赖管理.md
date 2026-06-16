@@ -1,12 +1,12 @@
-# Lesson 03: Python 虚拟环境和依赖管理
+# 第03课：Python 虚拟环境和依赖管理
 
 ## 这一课要解决什么
 
 前两课我们做了两件事：
 
 ```text
-Lesson 01: 项目有了 GitHub 仓库
-Lesson 02: 项目有了清楚的房间布局
+第01课：项目有了 GitHub 仓库
+第02课：项目有了清楚的房间布局
 ```
 
 现在问题来了：
@@ -17,7 +17,7 @@ Lesson 02: 项目有了清楚的房间布局
 真实密码应该放在哪里？
 ```
 
-Lesson 03 要解决的就是“运行环境”问题。
+第03课要解决的就是“运行环境”问题。
 
 你可以把它理解成：
 
@@ -284,7 +284,7 @@ OPENAI_API_KEY=your_api_key_here
 ```text
 requirements.txt
 .env.example
-docs/lesson-03-python-env-and-dependencies.md
+docs/第03课-Python虚拟环境和依赖管理.md
 ```
 
 它们分别像：
@@ -292,7 +292,7 @@ docs/lesson-03-python-env-and-dependencies.md
 ```text
 requirements.txt = 采购清单
 .env.example     = 配置表模板
-Lesson 03        = 使用说明和学习笔记
+第03课            = 使用说明和学习笔记
 ```
 
 ## 今天实际遇到的坑
