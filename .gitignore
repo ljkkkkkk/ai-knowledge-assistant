@@ -4,6 +4,8 @@ __pycache__/
 .env.*
 !.env.example
 .tmp/
+.pytest_cache/
+pytest-cache-files-*/
 *.pyc
 *.log
 data/uploads/

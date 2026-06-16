@@ -22,6 +22,8 @@
 
 第 3 阶段：准备 Python 虚拟环境、依赖清单和环境变量模板。
 
+第 4 阶段：创建第一个 FastAPI 服务和健康检查接口。
+
 ## 学习原则
 
 每次只做一个小闭环：
@@ -35,6 +37,7 @@
 ```text
 ai-knowledge-assistant/
   app/                # 后端主代码
+    main.py           # FastAPI 应用入口
     api/              # 接口层：以后放上传、提问、健康检查等 API
     core/             # 核心配置：以后放配置项、日志、环境变量读取
     services/         # 业务逻辑：以后放文档解析、检索、问答流程
@@ -53,3 +56,24 @@ ai-knowledge-assistant/
 - [Lesson 01: 从 GitHub 仓库开始](docs/lesson-01-github-and-project.md)
 - [Lesson 02: 项目结构和 README](docs/lesson-02-project-structure-and-readme.md)
 - [Lesson 03: Python 虚拟环境和依赖管理](docs/lesson-03-python-env-and-dependencies.md)
+- [Lesson 04: 第一个 FastAPI 服务](docs/lesson-04-first-fastapi-service.md)
+
+## 本地运行
+
+安装依赖：
+
+```powershell
+.\scripts\install-deps.ps1
+```
+
+启动服务：
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload
+```
+
+访问健康检查：
+
+```text
+http://127.0.0.1:8000/health
+```
