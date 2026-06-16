@@ -2,8 +2,9 @@ __pycache__/
 .venv/
 .env
 .env.*
+!.env.example
+.tmp/
 *.pyc
 *.log
 data/uploads/
 data/index/
-

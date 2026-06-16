@@ -20,6 +20,8 @@
 
 第 2 阶段：整理项目结构，让仓库看起来像一个可以长期维护的工程。
 
+第 3 阶段：准备 Python 虚拟环境、依赖清单和环境变量模板。
+
 ## 学习原则
 
 每次只做一个小闭环：
@@ -41,6 +43,8 @@ ai-knowledge-assistant/
   docs/               # 学习笔记、项目设计、复盘
   scripts/            # 辅助脚本：以后放评测、数据处理、启动检查
   tests/              # 测试代码
+  requirements.txt    # Python 依赖清单
+  .env.example        # 环境变量模板，不放真实密码
   README.md           # 项目说明，给自己和面试官看的入口
 ```
 
@@ -48,3 +52,4 @@ ai-knowledge-assistant/
 
 - [Lesson 01: 从 GitHub 仓库开始](docs/lesson-01-github-and-project.md)
 - [Lesson 02: 项目结构和 README](docs/lesson-02-project-structure-and-readme.md)
+- [Lesson 03: Python 虚拟环境和依赖管理](docs/lesson-03-python-env-and-dependencies.md)
