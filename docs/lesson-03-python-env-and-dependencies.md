@@ -344,6 +344,46 @@ ensurepip
 Git，别管这些临时安装文件。
 ```
 
+### C 盘空间紧张时怎么办
+
+这台电脑的 C 盘空间比较紧张，所以我们不希望 pip 把下载缓存长期放在 C 盘。
+
+实际检查后，这次真正安装好的包在：
+
+```text
+D:\workshop\projects\ai-knowledge-assistant\.venv\Lib\site-packages
+```
+
+也就是说，FastAPI、Uvicorn、Pytest 这些包本体都在 D 盘项目虚拟环境里。
+
+但 pip 默认缓存目录可能还是：
+
+```text
+C:\Users\13209\AppData\Local\pip\cache
+```
+
+所以我们新增了一个安装脚本：
+
+```powershell
+.\scripts\install-deps.ps1
+```
+
+它会在安装依赖前设置：
+
+```text
+TEMP          -> 项目内 .tmp/
+TMP           -> 项目内 .tmp/
+PIP_CACHE_DIR -> 项目内 .tmp/.pip-cache/
+```
+
+大白话：
+
+```text
+以后这个项目装包，尽量把下载缓存和临时文件都放回 D 盘项目文件夹里。
+```
+
+`.tmp/` 已经被 `.gitignore` 忽略，所以不会上传 GitHub。
+
 ### 坑 3：`.env.example` 差点被忽略
 
 一开始 `.gitignore` 里有：
